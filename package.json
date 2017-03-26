@@ -10,7 +10,7 @@
     "donate",
     "give-back"
   ],
-  "author": "Alaina Kafkes <alainak@u.northwestern.edu>",
+  "author": "Alaina Kafkes <alainakafkes@gmail.com>",
   "license": "ISC",
   "bin": {
     "give-back": "./index.js"
