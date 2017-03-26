@@ -3,6 +3,7 @@
 const path = require('path');
 const fs = require('fs');
 const program = require('commander');
+const validUrl = require('valid-url');
 
 program
   .arguments('add <donateLink>')
@@ -10,7 +11,7 @@ program
   .action(function(cmdArg, objArg) {
     var linkArg = objArg.rawArgs[objArg.rawArgs.length-1]
     const cwd = process.cwd();
-    if (linkArg) {
+    if (validUrl.isUri(linkArg)) {
       fs.writeFile(path.join(cwd, '/DONATE.txt'), linkArg, 'utf8', function(error) {
         if (error) return console.log(error);
       });
