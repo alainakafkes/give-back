@@ -1,0 +1,23 @@
+{
+  "name": "give-back",
+  "version": "1.0.0",
+  "description": "Adds a DONATE.txt file to a GitHub project so that users can pledge money to that project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "donate",
+    "give-back"
+  ],
+  "author": "Alaina Kafkes <alainak@u.northwestern.edu>",
+  "license": "ISC",
+  "bin": {
+    "give-back": "./index.js"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "file-system": "^2.2.2",
+    "path": "^0.12.7"
+  }
+}
